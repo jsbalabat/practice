@@ -8,6 +8,23 @@ import Track7 from '../../assets/pic7.jpg';
 import Track8 from '../../assets/pic8.jpg';
 import './Tiles.css';
 
+export default function ImageTrack() {
+    return (
+        <>
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+            <img className="image" src={Track1} draggable="false" />
+            <img className="image" src={Track2} draggable="false" />
+            <img className="image" src={Track3} draggable="false" />
+            <img className="image" src={Track4} draggable="false" />
+            <img className="image" src={Track5} draggable="false" />
+            <img className="image" src={Track6} draggable="false" />
+            <img className="image" src={Track7} draggable="false" />
+            <img className="image" src={Track8} draggable="false" />
+        </div>
+        </>
+    );
+}
+
 const track = document.getElementById("image-track");
     
 window.onmousedown = e => {
@@ -42,21 +59,4 @@ window.onmousemove = e => {
         }, {duration: 1200, fill: "forwards"
       });
     }
-}
-
-export default function ImageTrack() {
-    return (
-        <>
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-            <img className="image" src={Track1} draggable="false" />
-            <img className="image" src={Track2} draggable="false" />
-            <img className="image" src={Track3} draggable="false" />
-            <img className="image" src={Track4} draggable="false" />
-            <img className="image" src={Track5} draggable="false" />
-            <img className="image" src={Track6} draggable="false" />
-            <img className="image" src={Track7} draggable="false" />
-            <img className="image" src={Track8} draggable="false" />
-        </div>
-        </>
-    );
 }
