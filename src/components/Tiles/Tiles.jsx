@@ -34,6 +34,8 @@ window.onmousemove = e => {
       }, {duration: 1200, fill: "forwards"
     });
 
+    
+
     for(const image of track.getElementsByClassName("image")) {
       image.animate({
         objectPosition: `${nextPercentage + 100}% 50%`,
